@@ -1,7 +1,7 @@
 {% assign post = include.post %}
 {% assign volume = include.volume %}
 
-<a href="{{ post.url | site.baseurl }}">
+<a href="{{ post.url | prepend: site.baseurl }}">
   <div class="card">
 
     <h1 class="card__title">{{ post.title }}</h1>
