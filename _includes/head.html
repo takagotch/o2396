@@ -9,14 +9,14 @@
 <title>{{ title }}</title>
 
 <!-- favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/img/site.favicon' | site.baseurl }}" />
-<link rel="icon" type="image/x-icon" href="{{ '/assets/img/site.favicon' | site.baseurl }}" />
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/img/site.favicon' | prepend: site.baseurl }}" />
+<link rel="icon" type="image/x-icon" href="{{ '/assets/img/site.favicon' | prepend: site.baseurl }}" />
 
 <!-- font -->
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,400i" rel="stylesheet">
 
 <!-- RSS -->
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | site.baseurl }}" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl }}" />
 
 {% if site.ga %}
 {% include ga.html ga = site.ga %}
